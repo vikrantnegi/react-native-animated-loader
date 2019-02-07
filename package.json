@@ -1,0 +1,14 @@
+{
+  "name": "react-native-animated-loader",
+  "version": "0.0.1",
+  "description": "react-native-animated-loader",
+  "main": "src/index.js",
+  "files":[
+    "src"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vikrantnegi",
+  "license": "MIT"
+}

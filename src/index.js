@@ -7,7 +7,7 @@ export default class AnimatedLoader extends React.PureComponent {
   static defaultProps = {
     visible: false,
     overlayColor: 'rgba(0, 0, 0, 0.25)',
-    source: {},
+    source: require('./loading.json'),
     animationType: 'none',
     animationStyle: {},
   };

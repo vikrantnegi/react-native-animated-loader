@@ -13,5 +13,24 @@
     "prop-types": "^15.6.2"
   },
   "author": "vikrantnegi",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-loader",
+    "lottie-react-native",
+    "react-native-progress",
+    "lottie",
+    "react",
+    "mobile",
+    "react-native-progress"
+  ],
+  "homepage": "https://github.com/vikrantnegi/react-native-animated-loader",
+  "bugs": {
+    "url": "https://github.com/vikrantnegi/react-native-animated-loader/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vikrantnegi/react-native-animated-loader.git"
+  }
 }

@@ -2,8 +2,8 @@
 
 [![downloads](https://img.shields.io/npm/dt/react-native-animated-loader.svg)](http://npm-stats.com/~packages/react-native-animated-loader)
 [![npm-version](https://img.shields.io/npm/v/react-native-animated-loader.svg)](https://www.npmjs.com/package/react-native-animated-loader)
-[![github-tag](https://img.shields.io/github/tag/ankurk91/react-native-animated-loader.svg?maxAge=1800)](https://github.com/ankurk91/react-native-animated-loader/)
-[![license](https://img.shields.io/github/license/ankurk91/react-native-animated-loader.svg?maxAge=1800)](https://yarnpkg.com/en/package/react-native-animated-loader)
+[![github-tag](https://img.shields.io/github/tag/vikrantnegi/react-native-animated-loader.svg?maxAge=1800)](https://github.com/vikrantnegi/react-native-animated-loader/)
+[![license](https://img.shields.io/github/license/vikrantnegi/react-native-animated-loader.svg?maxAge=1800)](https://yarnpkg.com/en/package/react-native-animated-loader)
 
 A React Native Loader Component which uses Airbnb's [Lottie](https://github.com/react-native-community/lottie-react-native) for beautiful loader animations.
 

@@ -7,18 +7,21 @@ export default class AnimatedLoader extends React.PureComponent {
   static defaultProps = {
     visible: false,
     overlayColor: 'rgba(0, 0, 0, 0.25)',
-    source: require('./loader.json'),
     animationType: 'none',
+    source: require('./loader.json'),
     animationStyle: {},
+    speed: 1,
+    loop: true,
   };
 
   static propTypes = {
-    animation: PropTypes.object,
     visible: PropTypes.bool,
     overlayColor: PropTypes.string,
     animationType: PropTypes.oneOf(['none', 'slide', 'fade']),
     source: PropTypes.object,
     animationStyle: ViewPropTypes.style,
+    speed: PropTypes.number,
+    loop: PropTypes.bool,
   };
 
   animation = React.createRef();
@@ -39,13 +42,13 @@ export default class AnimatedLoader extends React.PureComponent {
   }
 
   _renderLottie = () => {
-    const { source, animationStyle } = this.props;
+    const { source, animationStyle, speed, loop } = this.props;
     return (
       <LottieAnimation
-        {...this.props}
         ref={this.animation}
         source={source}
-        loop
+        loop={loop}
+        speed={speed}
         style={[styles.animationStyle, animationStyle]}
       />
     );

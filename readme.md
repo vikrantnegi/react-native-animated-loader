@@ -21,12 +21,13 @@ npm i --save react-native-animated-loader
 
 ```jsx
 import React from 'react';
+import { StyleSheet } from 'react-native';
 import AnimatedLoader from "react-native-animated-loader";
 
 export default class Loader extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { visible: true };
+    this.state = { visible: false };
   }
 
   componentDidMount() {
@@ -34,7 +35,7 @@ export default class Loader extends React.Component {
       this.setState({
         spinner: !this.state.visible
       });
-    }, 3000);
+    }, 30000);
   }
 
   render() {
@@ -50,6 +51,13 @@ export default class Loader extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  lottie: {
+    width: 100,
+    height: 100
+  }
+});
 ```
 
 ## API
@@ -61,10 +69,13 @@ export default class Loader extends React.Component {
 |**`overlayColor`**| Changes the color of the overlay. | `rgba(255,255,255,0.75)` |
 |**`animationStyle`**| The style to be applied to the Lottie. | - |
 |**`animationType`**| Changes animation on show and hide loader's view. | `none` |
+|**`speed`**| The speed the animation will progress. | `1` |
+|**`loop`**| A boolean flag indicating whether or not the animation should loop. | `true` |
 
 ## TODOs
 - [ ] Add expo example
 - [ ] Add ability to render text with animations
+- [ ] Add test cases
 
 ## License
 Licensed under the [MIT](https://github.com/vikrantnegi/react-native-animated-loader/blob/master/LICENSE).

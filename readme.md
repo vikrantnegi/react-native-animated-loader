@@ -13,9 +13,13 @@ A React Native Loader Component which uses Airbnb's [Lottie](https://github.com/
 
 
 ## Prerequisites
-This library uses [lottie-react-native](https://github.com/react-native-community/lottie-react-native) to render loader animations. Therefor this library need to be installed and linked to your project before installing this package.
+### Using React Native CLI
+This library uses [lottie-react-native](https://github.com/react-native-community/lottie-react-native) to render loader animations. Therefore this library need to be installed and linked to your project before installing this package.
 
 Follow the official instruction and linking guide [here](https://github.com/react-native-community/lottie-react-native/blob/master/README.md#getting-started).
+
+### Using Expo
+No need to anything but to install the package itself. Expo already has Lottie library API available.
 
 ## Install
 

@@ -63,6 +63,7 @@ export default class AnimatedLoader extends React.PureComponent {
         visible={visible}
         animationType={animationType}
         supportedOrientations={['portrait']}
+        onRequestClose={() => {}}
       >
         <View style={[styles.container, { backgroundColor: overlayColor }]}>
           <View>{this._renderLottie()}</View>

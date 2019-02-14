@@ -43,7 +43,7 @@ export default class Loader extends React.Component {
   componentDidMount() {
     setInterval(() => {
       this.setState({
-        spinner: !this.state.visible
+        visible: !this.state.visible
       });
     }, 30000);
   }

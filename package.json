@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-loader",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "react-native-animated-loader",
   "main": "src/index.js",
   "files":[

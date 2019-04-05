@@ -1,4 +1,6 @@
-# React Native Animated Loader
+# React Native Animated Loader 
+
+Read more on [blog](https://medium.freecodecamp.org/how-to-create-a-beautifully-animated-loader-in-react-native-21da37a8f6b0)
 
 [![downloads](https://img.shields.io/npm/dt/react-native-animated-loader.svg)](http://npm-stats.com/~packages/react-native-animated-loader)
 [![npm-version](https://img.shields.io/npm/v/react-native-animated-loader.svg)](https://www.npmjs.com/package/react-native-animated-loader)

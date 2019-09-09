@@ -1,9 +1,9 @@
 {
   "name": "react-native-animated-loader",
   "version": "0.0.7",
-  "description": "react-native-animated-loader",
+  "description": "Useful to show lottie animation spinners in react-native mobile apps",
   "main": "src/index.js",
-  "files":[
+  "files": [
     "src"
   ],
   "scripts": {
@@ -11,6 +11,11 @@
   },
   "dependencies": {
     "prop-types": "^15.6.2"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": ">=0.46",
+    "lottie-react-native": ">=3.0.0"
   },
   "author": "Vikrant Negi",
   "license": "MIT",

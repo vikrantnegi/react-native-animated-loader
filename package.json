@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-loader",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Useful to show lottie animation spinners in react-native mobile apps",
   "main": "src/index.js",
   "files": [

@@ -51,7 +51,7 @@ export default class Loader extends React.Component {
       this.setState({
         visible: !this.state.visible
       });
-    }, 30000);
+    }, 2000);
   }
 
   render() {

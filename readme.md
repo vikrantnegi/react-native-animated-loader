@@ -76,6 +76,10 @@ const styles = StyleSheet.create({
 });
 ```
 
+### Loader files
+
+You can find free lottie files for your loaders [here](https://lottiefiles.com/search?q=loader).
+
 ## Props
 
 | Prop | Description | Default |

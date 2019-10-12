@@ -1,6 +1,6 @@
 # React Native Animated Loader 
 
-Read more on [blog](https://www.freecodecamp.org/news/how-to-create-a-beautifully-animated-loader-in-react-native-21da37a8f6b0/)
+Read more about this package [here](https://www.freecodecamp.org/news/how-to-create-a-beautifully-animated-loader-in-react-native-21da37a8f6b0/).
 
 [![downloads](https://img.shields.io/npm/dt/react-native-animated-loader.svg)](http://npm-stats.com/~packages/react-native-animated-loader)
 [![npm-version](https://img.shields.io/npm/v/react-native-animated-loader.svg)](https://www.npmjs.com/package/react-native-animated-loader)
@@ -21,7 +21,7 @@ This library uses [lottie-react-native](https://github.com/react-native-communit
 Follow the official instruction and linking guide [here](https://github.com/react-native-community/lottie-react-native/blob/master/README.md#getting-started).
 
 ### Using Expo
-No need to anything but to install the package itself. Expo already has Lottie library API available.
+No need to do anything specific, just install the package itself. Expo already has Lottie library API available and it will take care of the rest.
 
 ## Install
 

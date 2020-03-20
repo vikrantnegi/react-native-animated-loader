@@ -22,6 +22,7 @@ export default class AnimatedLoader extends React.PureComponent {
     animationStyle: ViewPropTypes.style,
     speed: PropTypes.number,
     loop: PropTypes.bool,
+    closeElement: PropTypes.element
   };
 
   animation = React.createRef();
@@ -55,7 +56,7 @@ export default class AnimatedLoader extends React.PureComponent {
   };
 
   render() {
-    const { visible, overlayColor, animationType } = this.props;
+    const { visible, overlayColor, animationType, closeElement } = this.props;
 
     return (
       <Modal
@@ -66,7 +67,7 @@ export default class AnimatedLoader extends React.PureComponent {
         onRequestClose={() => {}}
       >
         <View style={[styles.container, { backgroundColor: overlayColor }]}>
-          <View>{this._renderLottie()}</View>
+          {[this._renderLottie(),closeElement]}
         </View>
       </Modal>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Modal, ViewPropTypes } from 'react-native';
+import { StyleSheet, View, Modal, ViewPropTypes, BackHandler } from 'react-native';
 import PropTypes from 'prop-types';
 import LottieAnimation from 'lottie-react-native';
 
@@ -12,6 +12,7 @@ export default class AnimatedLoader extends React.PureComponent {
     animationStyle: {},
     speed: 1,
     loop: true,
+    backButtonPress: () => Backhandler.exitApp(),
   };
 
   static propTypes = {
@@ -22,6 +23,7 @@ export default class AnimatedLoader extends React.PureComponent {
     animationStyle: ViewPropTypes.style,
     speed: PropTypes.number,
     loop: PropTypes.bool,
+    backButtonPress: PropTypes.func,
   };
 
   animation = React.createRef();
@@ -63,7 +65,7 @@ export default class AnimatedLoader extends React.PureComponent {
         visible={visible}
         animationType={animationType}
         supportedOrientations={['portrait']}
-        onRequestClose={() => {}}
+        onRequestClose={backButtonPress}
       >
         <View style={[styles.container, { backgroundColor: overlayColor }]}>
           <View>{this._renderLottie()}</View>

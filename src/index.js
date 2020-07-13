@@ -12,7 +12,7 @@ export default class AnimatedLoader extends React.PureComponent {
     animationStyle: {},
     speed: 1,
     loop: true,
-    backButtonPress: () => Backhandler.exitApp(),
+    backButtonPress: () => BackHandler.exitApp(),
   };
 
   static propTypes = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Modal, ViewPropTypes, BackHandler } from 'react-native';
+import { StyleSheet, View, Modal, ViewPropTypes, BackHandler, Platform } from 'react-native';
 import PropTypes from 'prop-types';
 import LottieAnimation from 'lottie-react-native';
 
@@ -12,7 +12,7 @@ export default class AnimatedLoader extends React.PureComponent {
     animationStyle: {},
     speed: 1,
     loop: true,
-    backButtonPress: () => BackHandler.exitApp(),
+    backButtonPress: () => Platform.OS === 'android' ? BackHandler.exitApp() : null,
   };
 
   static propTypes = {

@@ -92,7 +92,7 @@ You can find free lottie files for your loaders [here](https://lottiefiles.com/s
 |**`speed`**| The speed the animation will progress. | `1` |
 |**`loop`**| A boolean flag indicating whether or not the animation should loop. | `true` |
 
-## TODOs
+## Work in Progress
 - [ ] Add expo example
 - [ ] Add ability to render text with animations
 - [ ] Add test cases

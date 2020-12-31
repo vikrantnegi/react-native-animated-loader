@@ -67,6 +67,7 @@ export default class AnimatedLoader extends React.PureComponent {
       >
         <View style={[styles.container, { backgroundColor: overlayColor }]}>
           <View>{this._renderLottie()}</View>
+          {this.props.children}
         </View>
       </Modal>
     );

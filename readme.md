@@ -63,7 +63,9 @@ export default class Loader extends React.Component {
         source={require("./loader.json")}
         animationStyle={styles.lottie}
         speed={1}
-      />
+      >
+        <Text>Doing something...</Text>
+      </AnimatedLoader>
     );
   }
 }

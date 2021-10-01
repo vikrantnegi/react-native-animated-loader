@@ -34,10 +34,10 @@ npm install react-native-animated-loader --save
 ```
 
 ## Usage
-
+### Class Component
 ```jsx
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet,Text } from 'react-native';
 import AnimatedLoader from "react-native-animated-loader";
 
 export default class Loader extends React.Component {
@@ -76,6 +76,38 @@ const styles = StyleSheet.create({
     height: 100
   }
 });
+```
+### Functional Component
+
+```jsx
+import React, {useState, useEffect} from 'react';
+import {StyleSheet, Text} from 'react-native';
+import AnimatedLoader from 'react-native-animated-loader';
+export default function App() {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    setInterval(() => {
+      setVisible(!visible);
+    }, 2000);
+  }, []);
+
+  return (
+    <AnimatedLoader
+      visible={visible}
+      overlayColor="rgba(255,255,255,0.75)"
+      animationStyle={styles.lottie}
+      speed={1}>
+      <Text>Doing something...</Text>
+    </AnimatedLoader>
+  );
+}
+const styles = StyleSheet.create({
+  lottie: {
+    width: 100,
+    height: 100,
+  },
+});
+
 ```
 
 ### Loader files

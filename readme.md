@@ -110,6 +110,9 @@ const styles = StyleSheet.create({
 
 ```
 
+### Usage in Expo
+[Example for expo projects](https://snack.expo.dev/tTSGEcb5J)
+
 ### Loader files
 
 You can find free lottie files for your loaders [here](https://lottiefiles.com/search?q=loader).
@@ -127,7 +130,7 @@ You can find free lottie files for your loaders [here](https://lottiefiles.com/s
 |**`loop`**| A boolean flag indicating whether or not the animation should loop. | `true` |
 
 ## Work in Progress
-- [ ] Add expo example
+- [x] Add expo example
 - [ ] Add ability to render text with animations
 - [ ] Add test cases
 

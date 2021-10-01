@@ -34,10 +34,10 @@ npm install react-native-animated-loader --save
 ```
 
 ## Usage
-
+### Class Component
 ```jsx
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet,Text } from 'react-native';
 import AnimatedLoader from "react-native-animated-loader";
 
 export default class Loader extends React.Component {
@@ -77,6 +77,41 @@ const styles = StyleSheet.create({
   }
 });
 ```
+### Functional Component
+
+```jsx
+import React, {useState, useEffect} from 'react';
+import {StyleSheet, Text} from 'react-native';
+import AnimatedLoader from 'react-native-animated-loader';
+export default function App() {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    setInterval(() => {
+      setVisible(!visible);
+    }, 2000);
+  }, []);
+
+  return (
+    <AnimatedLoader
+      visible={visible}
+      overlayColor="rgba(255,255,255,0.75)"
+      animationStyle={styles.lottie}
+      speed={1}>
+      <Text>Doing something...</Text>
+    </AnimatedLoader>
+  );
+}
+const styles = StyleSheet.create({
+  lottie: {
+    width: 100,
+    height: 100,
+  },
+});
+
+```
+
+### Usage in Expo
+[Example for expo projects](https://snack.expo.dev/tTSGEcb5J)
 
 ### Loader files
 
@@ -95,7 +130,7 @@ You can find free lottie files for your loaders [here](https://lottiefiles.com/s
 |**`loop`**| A boolean flag indicating whether or not the animation should loop. | `true` |
 
 ## Work in Progress
-- [ ] Add expo example
+- [x] Add expo example
 - [ ] Add ability to render text with animations
 - [ ] Add test cases
 

@@ -15,7 +15,8 @@
   "peerDependencies": {
     "react": "*",
     "react-native": ">=0.46",
-    "lottie-react-native": ">=3.0.0"
+    "lottie-react-native": ">=3.0.0",
+    "deprecated-react-native-prop-types": "^2.3.0"
   },
   "author": "Vikrant Negi",
   "license": "MIT",

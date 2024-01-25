@@ -42,6 +42,12 @@ export default class AnimatedLoader extends React.PureComponent {
     }
   }
 
+  componentWillUnmount() {
+    if (this.animation.current) {
+      this.animation.current.reset();
+    }
+  }
+
   _renderLottie = () => {
     const { source, animationStyle, speed, loop } = this.props;
     return (

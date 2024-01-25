@@ -19,7 +19,10 @@ export default class AnimatedLoader extends React.PureComponent {
     overlayColor: PropTypes.string,
     animationType: PropTypes.oneOf(['none', 'slide', 'fade']),
     source: PropTypes.object,
-    animationStyle: PropTypes.object,
+    animationStyle: PropTypes.oneOfType([
+      PropTypes.object,
+      PropTypes.array,
+    ]),
     speed: PropTypes.number,
     loop: PropTypes.bool,
   };

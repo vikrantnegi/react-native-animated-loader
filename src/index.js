@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, View, Modal } from 'react-native';
 import PropTypes from 'prop-types';
 import LottieAnimation from 'lottie-react-native';
-import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 
 export default class AnimatedLoader extends React.PureComponent {
   static defaultProps = {
@@ -20,7 +19,7 @@ export default class AnimatedLoader extends React.PureComponent {
     overlayColor: PropTypes.string,
     animationType: PropTypes.oneOf(['none', 'slide', 'fade']),
     source: PropTypes.object,
-    animationStyle: ViewPropTypes.style,
+    animationStyle: PropTypes.object,
     speed: PropTypes.number,
     loop: PropTypes.bool,
   };
